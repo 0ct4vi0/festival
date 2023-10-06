@@ -1,0 +1,28 @@
+@import "components/_mixin";
+
+
+header{
+        nav{
+            display: flex;
+            // align-items: center;
+            // // justify-content:space-around ;
+            .elementos{
+               
+                
+            }
+            .redes{
+                margin-left: 3rem;
+                margin: 1rem;
+                 
+                img{
+                    width: 200px;
+                    height: 190px;
+                }
+                .ig{
+                    width: 210px;
+                    height: 190px;
+                }
+
+            }
+     }
+}
