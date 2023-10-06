@@ -1,26 +1,28 @@
-@import "components/_mixin";
+@import "../components/_mixin.scss";
 
 
 header{
         nav{
             display: flex;
-            // align-items: center;
-            // // justify-content:space-around ;
+            justify-content:space-evenly ;
             .elementos{
-               
-                
+                    ul{
+                        li{
+                        
+                           
+
+                        }
+                    }    
             }
             .redes{
                 margin-left: 3rem;
                 margin: 1rem;
                  
                 img{
-                    width: 200px;
-                    height: 190px;
+                   @include mixin-redes
                 }
                 .ig{
-                    width: 210px;
-                    height: 190px;
+                    @include mixin-redes
                 }
 
             }

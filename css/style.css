@@ -1,18 +1,26 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "components/_mixin";
- *   |         ^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\layouts\_header.scss 1:9  @import
- *   scss\style.scss 2:9            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"components/_mixin\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layouts\\_header.scss 1:9  @import\a   scss\\style.scss 2:9            root stylesheet";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
 }
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav .redes {
+  margin-left: 3rem;
+  margin: 1rem;
+}
+header nav .redes img {
+  width: 190px;
+  height: 150px;
+}
+header nav .redes .ig {
+  width: 190px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
