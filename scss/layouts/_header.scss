@@ -2,29 +2,44 @@
 
 
 header{
-        nav{
-            display: flex;
-            justify-content:space-evenly ;
-            .elementos{
-                    ul{
-                        li{
-                        
-                           
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(204, 199, 199);
+    align-items: center;
+    height: 95px;
+    padding: 5px 10%;
 
-                        }
-                    }    
-            }
-            .redes{
-                margin-left: 3rem;
-                margin: 1rem;
-                 
-                img{
-                   @include mixin-redes
-                }
-                .ig{
-                    @include mixin-redes
-                }
+        .nav-links{
+            list-style: none;
+            cursor: pointer;
 
+                li{
+                    display: inline-block;
+                    padding: 0 20px;
+                    margin-left: 4rem;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        color: red;
+                    }
+
+                    a{          
+                        font-size: 700;
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+        }
+     .redes{
+        cursor: pointer;
+
+            img{
+                @include mixin-redes;
+    
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
-     }
+    }   
 }
+

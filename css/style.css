@@ -6,21 +6,44 @@
   font-size: 18px;
 }
 
-header nav {
+header {
   display: flex;
   justify-content: space-evenly;
+  background-color: rgb(204, 199, 199);
+  align-items: center;
+  height: 95px;
+  padding: 5px 10%;
 }
-header nav .redes {
-  margin-left: 3rem;
-  margin: 1rem;
+header .nav-links {
+  list-style: none;
+  cursor: pointer;
 }
-header nav .redes img {
-  width: 190px;
-  height: 150px;
+header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  margin-left: 4rem;
 }
-header nav .redes .ig {
-  width: 190px;
-  height: 150px;
+header .nav-links li:hover {
+  transform: scale(1.1);
+  color: red;
+}
+header .nav-links li a {
+  font-size: 700;
+  color: black;
+  text-decoration: none;
+}
+header .redes {
+  cursor: pointer;
+}
+header .redes img {
+  width: 70px;
+  height: 65px;
+  border-radius: 40px;
+  margin: 14px;
+  transition: all 0.3s;
+}
+header .redes img:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
