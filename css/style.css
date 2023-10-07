@@ -46,4 +46,57 @@ header .redes img:hover {
   transform: scale(1.2);
 }
 
+main section .logo img {
+  width: 500px;
+  height: 900px;
+  margin: 20px;
+  transform: translatex(23rem);
+}
+main section h1 {
+  font-size: 34px;
+  margin: 10px 0px 0px 0px;
+  margin-left: 20rem;
+}
+main section .prueba {
+  width: 15rem;
+  border-bottom: 2px solid rgb(241, 120, 120);
+  margin: 10px 30rem 2rem;
+}
+main section .intro {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(233, 229, 229);
+}
+main section .intro p {
+  padding-top: 2rem;
+  font-size: 19px;
+  width: 30rem;
+  margin-left: 3rem;
+}
+main section .intro img {
+  margin-left: 3rem;
+  width: 400px;
+  height: 300px;
+}
+
+.fest {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.fest img {
+  transform: translateX(7rem);
+  margin: 15px;
+  width: 350px;
+  height: 300px;
+}
+
+article h2 {
+  font-size: 26px;
+  margin: 13px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+.fest{
+    display: grid;
+    grid-template-columns: repeat(3,380px);
+    row-gap: 5px;
+    column-gap: 5px;
+
+    
+     img {
+        transform: translateX(7rem);
+        margin: 15px;
+        width: 350px;
+        height: 300px;
+        } 
+
+
+}
