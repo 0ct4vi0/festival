@@ -2,9 +2,11 @@
 
 
 header{
+    // position: fixed;
+    // z-index:3 ;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(204, 199, 199);
+    background-image:linear-gradient(to right, rgb(236, 45, 45), rgb(255, 255, 255) );
     align-items: center;
     height: 95px;
     padding: 5px 10%;
@@ -18,15 +20,15 @@ header{
                     padding: 0 20px;
                     margin-left: 4rem;
 
-                    &:hover{
-                        transform: scale(1.1);
-                        color: red;
-                    }
-
                     a{          
                         font-size: 700;
                         color: black;
                         text-decoration: none;
+                        
+                    &:hover{
+                        transform: scale(1.1);
+                        color: rgb(255, 255, 255);
+                    }
                     }
                 }
         }

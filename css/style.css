@@ -9,7 +9,7 @@
 header {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(204, 199, 199);
+  background-image: linear-gradient(to right, rgb(236, 45, 45), rgb(255, 255, 255));
   align-items: center;
   height: 95px;
   padding: 5px 10%;
@@ -23,14 +23,14 @@ header .nav-links li {
   padding: 0 20px;
   margin-left: 4rem;
 }
-header .nav-links li:hover {
-  transform: scale(1.1);
-  color: red;
-}
 header .nav-links li a {
   font-size: 700;
   color: black;
   text-decoration: none;
+}
+header .nav-links li a:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
 }
 header .redes {
   cursor: pointer;
@@ -152,7 +152,8 @@ main section .intro img {
 }
 
 footer {
-  background-color: rgb(189, 185, 185);
+  background-image: linear-gradient(to right, rgb(255, 255, 255), red);
+  color: rgb(0, 0, 0);
 }
 footer .redes {
   cursor: pointer;

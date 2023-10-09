@@ -1,8 +1,8 @@
 @import "../components/_mixin.scss";
 
 footer{
-    background-color: rgb(189, 185, 185);
-    
+    background-image:linear-gradient(to right, rgb(255, 255, 255), red );
+    color: rgb(0, 0, 0);
     .redes{
         cursor: pointer;
         width: 210px;
