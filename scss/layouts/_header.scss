@@ -33,6 +33,7 @@ header{
     
      .redes{
         cursor: pointer;
+        width: 210px;
 
             img{
                 @include mixin-redes;

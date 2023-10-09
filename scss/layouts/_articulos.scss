@@ -1,9 +1,77 @@
-article{
+.parte-1{
+    h2{
+        width:270px ;
+        transform: translateX(31.3rem);
+        font-size: 27px;
+        margin: 17px;
+    }
 
-        h2{
-            // transform: translateX(23rem);
-            font-size: 26px;
-            margin: 13px;
+     p{
+        transform: translateX(29.5rem);
+        width: 350px;
+        
+        a{
+            &:hover{
+                transform: scale(1.1);
+                color: red;
+            }
         }
+    }
+
+}
+
+
+.parte-2{
+
+    h2{
+        width:250px ;
+        transform: translateX(34rem);
+        font-size: 24px;
+        margin: 17px;
+    }
+
+    .Lista-de-Participantes{
+        margin: 10px;
+
+            li{
+                width: 200px;
+                transform: translate(33.5rem);
+                margin: 6px;
+            }
+    }
+
+}
+
+
+.parte-3{
+
+    h3{
+        font-size: 20px;
+        margin-top: 50px;
+        margin: 30px;
+        width: 130px;
+        transform: translate(32.5rem);
+    }
+
+    img{
+        margin-top:-2rem;
+        margin: 30px;
+        transform: translateX(16rem);
+
+    }
+
+    p{
+        width: 270px;
+        transform: translate(28rem);
+        margin:20px;
+        
+        a{
+            &:hover{
+                transform: scale(1.1);
+                color: red;
+            }
+        }
+
+    }
 
 }

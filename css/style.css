@@ -34,9 +34,10 @@ header .nav-links li a {
 }
 header .redes {
   cursor: pointer;
+  width: 210px;
 }
 header .redes img {
-  width: 70px;
+  width: 73px;
   height: 65px;
   border-radius: 40px;
   margin: 14px;
@@ -75,6 +76,10 @@ main section .intro p {
   width: 30rem;
   margin-left: 3rem;
 }
+main section .intro p a:hover {
+  transform: scale(1.1);
+  color: red;
+}
 main section .intro img {
   margin-left: 3rem;
   width: 400px;
@@ -94,9 +99,85 @@ main section .intro img {
   height: 300px;
 }
 
-article h2 {
-  font-size: 26px;
+.parte-1 h2 {
+  width: 270px;
+  transform: translateX(31.3rem);
+  font-size: 27px;
+  margin: 17px;
+}
+.parte-1 p {
+  transform: translateX(29.5rem);
+  width: 350px;
+}
+.parte-1 p a:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.parte-2 h2 {
+  width: 250px;
+  transform: translateX(34rem);
+  font-size: 24px;
+  margin: 17px;
+}
+.parte-2 .Lista-de-Participantes {
+  margin: 10px;
+}
+.parte-2 .Lista-de-Participantes li {
+  width: 200px;
+  transform: translate(33.5rem);
+  margin: 6px;
+}
+
+.parte-3 h3 {
+  font-size: 20px;
+  margin-top: 50px;
+  margin: 30px;
+  width: 130px;
+  transform: translate(32.5rem);
+}
+.parte-3 img {
+  margin-top: -2rem;
+  margin: 30px;
+  transform: translateX(16rem);
+}
+.parte-3 p {
+  width: 270px;
+  transform: translate(28rem);
+  margin: 20px;
+}
+.parte-3 p a:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+footer {
+  background-color: rgb(189, 185, 185);
+}
+footer .redes {
+  cursor: pointer;
+  width: 210px;
+  margin: 3px;
+}
+footer .redes img {
+  width: 73px;
+  height: 65px;
+  border-radius: 40px;
+  margin: 14px;
+  transition: all 0.3s;
+}
+footer .redes img:hover {
+  transform: scale(1.2);
+}
+footer ul {
+  margin: 10px;
+}
+footer ul li {
   margin: 13px;
+  list-style: none;
+}
+footer P {
+  margin: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */

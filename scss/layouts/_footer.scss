@@ -1,0 +1,32 @@
+@import "../components/_mixin.scss";
+
+footer{
+    background-color: rgb(189, 185, 185);
+    
+    .redes{
+        cursor: pointer;
+        width: 210px;
+        margin: 3px;
+            img{
+                @include mixin-redes;
+    
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+    } 
+
+    ul{
+        margin: 10px;
+        li{
+            margin: 13px;
+            list-style: none;
+        }
+
+    }
+
+    P{
+        margin: 7px;
+
+    }
+}

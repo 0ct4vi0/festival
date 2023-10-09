@@ -35,6 +35,13 @@ main{
                     font-size: 19px;
                     width: 30rem;
                     margin-left: 3rem;
+
+                        a{
+                            &:hover{
+                                transform: scale(1.1);
+                                color: red;
+                            }
+                        }
                 }   
             
                 img {
