@@ -3,11 +3,46 @@
 
 
 header{
-    // position: fixed;
-    // z-index:3 ;
+    @include mv(){
+        display: flex;
+        height: 77px;
+        width: 22.2rem;
+        background-image:linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0) );
+        justify-content: space-between;
+        align-items: center;
+
+            .nav-links{
+                list-style: none;
+            
+                li{
+                   display: inline;
+                    padding: 0 20px;
+                            
+                     a{          
+                        font-size: 700;
+                        color: black; 
+                        text-decoration: none;
+                                        
+                    &:hover{
+                            transform: scale(1.1);
+                            color: rgb(255, 255, 255);
+                        }
+                    }                            
+                }
+            }
+
+        .redes{
+            
+            img{
+                
+                @include mixin-redes
+            }
+        }    
+    }
+   
     display: flex;
-    justify-content: space-evenly;
-    // background-image:linear-gradient(to right, rgb(236, 45, 45), rgb(255, 255, 255) );
+    justify-content:space-around;
+    background-image:linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0) );
     align-items: center;
     height: 95px;
     padding: 5px 10%;
@@ -50,25 +85,6 @@ header{
             }
     } 
 
-
-    @include mv(){
-        width: 23rem;
-        background-color: gray;
-
-        .redes{
-            
-            img{
-                
-                width: 50px;
-            }
-        }
-        // nav{
-        //     justify-content: space-evenly;
-        // }
-        
-
-        
-    }
 
 }
 

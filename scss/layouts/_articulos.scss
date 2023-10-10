@@ -1,9 +1,16 @@
 @import "../components/_mixin.scss";
 
 .parte-1{
+
+    .prueba{
+            width:15rem;
+            border-bottom:2px solid rgb(243, 0, 0);
+            margin: 10px 31rem 2rem;
+    }
+
     h2{
         width:270px ;
-        transform: translateX(31.3rem);
+        transform: translateX(30.4rem);
         font-size: 27px;
         margin: 17px;
        
@@ -20,6 +27,39 @@
             }
         }
     }
+    
+    .suscripcion{
+
+        h2{
+            margin: 20px;
+            font-size: 26px;
+            transform: translateX(15rem);
+            width: 860px;
+            // color :red;
+        }
+
+        p{
+            width: 550px;
+            margin: 50px;
+            transform: translateX(22rem);
+
+        }
+        .whats{
+            width: 120px;
+            transform: translateX(34rem);
+            margin-bottom: 60px;
+            
+            a{    
+                @include mixin-boton; 
+                
+                &:hover{
+                    background-color:rgb(43, 255, 0);
+                    color: white;
+                    border: 5px solid green;
+                } 
+            }
+        } 
+}
 
 }
 
@@ -28,78 +68,60 @@
 
     h2{
         width:250px ;
-        transform: translateX(34rem);
-        font-size: 24px;
+        transform: translateX(32.3rem);
+        font-size: 28px;
         margin: 17px;
    
     }
 
     .Lista-de-Participantes{
-        margin: 10px;
+        margin: 15px;
 
             li{
                 width: 200px;
-                transform: translate(33.5rem);
+                transform: translate(32rem);
                 margin: 6px;
             }
     }
 
-    .suscripcion{
+    .prueba{
+        width:15rem;
+        border-bottom:2px solid rgb(243, 0, 0);
+        margin: 10px 31rem 2rem;
+}
 
-            h2{
-                margin: 20px;
-                font-size: 27px;
-                transform: translateX(15rem);
-                width: 860px;
-                // color :red;
-            }
-
-            p{
-                width: 550px;
-                margin: 50px;
-                transform: translateX(20rem);
-
-            }
-            .whats{
-                width: 120px;
-                transform: translateX(33.2rem);
-                
-                a{    
-                    @include mixin-boton; 
-                    
-                    &:hover{
-                        background-color:rgb(43, 255, 0);
-                        color: white;
-                        border: 5px solid green;
-                    } 
-                }
-            }
-        
-    }
 }
 
 
 .parte-3{
 
+    .prueba{
+        width:15rem;
+        border-bottom:2px solid rgb(243, 0, 0);
+        margin: 10px 31rem 2rem;
+}
+
     h3{
-        font-size: 20px;
+        font-size: 30px;
         margin-top: 50px;
         margin: 30px;
         width: 130px;
-        transform: translate(32.5rem);
+        transform: translateX(31.5rem);
     }
 
     img{
         margin-top:-2rem;
         margin: 30px;
-        transform: translateX(16rem);
+        transform: translateX(16.5rem);
 
     }
 
     p{
         width: 270px;
-        transform: translate(28rem);
+        transform: translate(31rem);
         margin:20px;
+        margin-bottom: 40px;
+        font-size: 18px;
         
         a{
             &:hover{
