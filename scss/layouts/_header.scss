@@ -1,12 +1,13 @@
 @import "../components/_mixin.scss";
 
 
+
 header{
     // position: fixed;
     // z-index:3 ;
     display: flex;
     justify-content: space-evenly;
-    background-image:linear-gradient(to right, rgb(236, 45, 45), rgb(255, 255, 255) );
+    // background-image:linear-gradient(to right, rgb(236, 45, 45), rgb(255, 255, 255) );
     align-items: center;
     height: 95px;
     padding: 5px 10%;
@@ -48,5 +49,26 @@ header{
                 }
             }
     } 
+
+
+    @include mv(){
+        width: 23rem;
+        background-color: gray;
+
+        .redes{
+            
+            img{
+                
+                width: 50px;
+            }
+        }
+        // nav{
+        //     justify-content: space-evenly;
+        // }
+        
+
+        
+    }
+
 }
 

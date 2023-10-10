@@ -5,6 +5,8 @@
     margin: 14px;
     transition: all 0.3s;
 
+    
+
 }
 
 @mixin mixin-boton{
@@ -20,4 +22,10 @@
     list-style-type: none;
     text-decoration: none;
 
+}
+
+@mixin mv( $media: 420px){
+    @media only screen and (max-width: $media){
+        @content;
+    }
 }
