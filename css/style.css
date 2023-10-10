@@ -128,6 +128,39 @@ main section .intro img {
   transform: translate(33.5rem);
   margin: 6px;
 }
+.parte-2 .suscripcion h2 {
+  margin: 20px;
+  font-size: 27px;
+  transform: translateX(15rem);
+  width: 860px;
+}
+.parte-2 .suscripcion p {
+  width: 550px;
+  margin: 50px;
+  transform: translateX(20rem);
+}
+.parte-2 .suscripcion .whats {
+  width: 120px;
+  transform: translateX(33.2rem);
+}
+.parte-2 .suscripcion .whats a {
+  width: 100px;
+  background-color: white;
+  color: green;
+  border: 5px solid green;
+  height: 60px;
+  margin: 30px;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 13px;
+  list-style-type: none;
+  text-decoration: none;
+}
+.parte-2 .suscripcion .whats a:hover {
+  background-color: rgb(43, 255, 0);
+  color: white;
+  border: 5px solid green;
+}
 
 .parte-3 h3 {
   font-size: 20px;

@@ -1,9 +1,12 @@
+@import "../components/_mixin.scss";
+
 .parte-1{
     h2{
         width:270px ;
         transform: translateX(31.3rem);
         font-size: 27px;
         margin: 17px;
+       
     }
 
      p{
@@ -28,6 +31,7 @@
         transform: translateX(34rem);
         font-size: 24px;
         margin: 17px;
+   
     }
 
     .Lista-de-Participantes{
@@ -40,6 +44,38 @@
             }
     }
 
+    .suscripcion{
+
+            h2{
+                margin: 20px;
+                font-size: 27px;
+                transform: translateX(15rem);
+                width: 860px;
+                // color :red;
+            }
+
+            p{
+                width: 550px;
+                margin: 50px;
+                transform: translateX(20rem);
+
+            }
+            .whats{
+                width: 120px;
+                transform: translateX(33.2rem);
+                
+                a{    
+                    @include mixin-boton; 
+                    
+                    &:hover{
+                        background-color:rgb(43, 255, 0);
+                        color: white;
+                        border: 5px solid green;
+                    } 
+                }
+            }
+        
+    }
 }
 
 

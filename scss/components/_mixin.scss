@@ -6,3 +6,18 @@
     transition: all 0.3s;
 
 }
+
+@mixin mixin-boton{
+    width: 100px;
+    background-color:white;
+    color:green;
+    border: 5px solid green;
+    height: 60px;
+    margin: 30px;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 13px;
+    list-style-type: none;
+    text-decoration: none;
+
+}
