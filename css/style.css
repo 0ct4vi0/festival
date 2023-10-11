@@ -14,38 +14,20 @@ header {
   height: 95px;
   padding: 5px 10%;
 }
-@media only screen and (max-width: 420px) {
-  header {
-    display: flex;
-    height: 77px;
-    width: 22.2rem;
-    background-image: linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0));
-    justify-content: space-between;
-    align-items: center;
-  }
-  header .nav-links {
-    list-style: none;
-  }
-  header .nav-links li {
-    display: inline;
-    padding: 0 20px;
-  }
-  header .nav-links li a {
-    font-size: 700;
-    color: black;
-    text-decoration: none;
-  }
-  header .nav-links li a:hover {
-    transform: scale(1.1);
-    color: rgb(255, 255, 255);
-  }
-  header .redes img {
-    width: 73px;
-    height: 65px;
-    border-radius: 40px;
-    margin: 14px;
-    transition: all 0.3s;
-  }
+header h1 {
+  font-size: 3.5em;
+}
+header h2 {
+  font-size: 2.7em;
+}
+header h3 {
+  font-size: 2rem;
+}
+header p {
+  font-size: 1.25em;
+}
+header ul {
+  list-style: none;
 }
 header .nav-links {
   list-style: none;
@@ -54,12 +36,13 @@ header .nav-links {
 header .nav-links li {
   display: inline-block;
   padding: 0 20px;
-  margin-left: 4rem;
+  transform: translateX(1em);
 }
 header .nav-links li a {
   font-size: 700;
   color: black;
   text-decoration: none;
+  margin-left: 3rem;
 }
 header .nav-links li a:hover {
   transform: scale(1.1);
@@ -79,7 +62,103 @@ header .redes img {
 header .redes img:hover {
   transform: scale(1.2);
 }
+@media only screen and (max-width: 420px) {
+  header header {
+    width: 23em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0));
+  }
+  header header h1 {
+    font-size: 3.5em;
+  }
+  header header h2 {
+    font-size: 2.7em;
+  }
+  header header h3 {
+    font-size: 2rem;
+  }
+  header header p {
+    font-size: 1.25em;
+  }
+  header header ul {
+    list-style: none;
+  }
+  header header li {
+    display: block;
+    padding: 0 20px;
+    margin: 5px;
+  }
+  header header li a {
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+  }
+  header header li a:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+  }
+  header header img {
+    width: 73px;
+    height: 65px;
+    border-radius: 40px;
+    margin: 14px;
+    transition: all 0.3s;
+  }
+  header header img:hover {
+    transform: scale(1.2);
+  }
+}
 
+@media only screen and (max-width: 420px) {
+  header {
+    width: 23em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0));
+  }
+  header h1 {
+    font-size: 3.5em;
+  }
+  header h2 {
+    font-size: 2.7em;
+  }
+  header h3 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1.25em;
+  }
+  header ul {
+    list-style: none;
+  }
+  header li {
+    display: block;
+    padding: 0 20px;
+    margin: 5px;
+  }
+  header li a {
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+  }
+  header li a:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+  }
+  header img {
+    width: 73px;
+    height: 65px;
+    border-radius: 40px;
+    margin: 14px;
+    transition: all 0.3s;
+  }
+  header img:hover {
+    transform: scale(1.2);
+  }
+}
 main section .logo img {
   width: 500px;
   height: 900px;
