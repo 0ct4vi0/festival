@@ -1,6 +1,45 @@
 @import "../components/_mixin.scss";
 
 header{
+
+    @include mv(420px){ 
+   
+       header{
+            width: 22em;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            @include mixin-style;
+            background-image:linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0) );
+    
+            li{
+                display: block;
+                padding: 0 20px;
+                margin: 5px;
+               
+                
+                    a{          
+                        font-size: 700;
+                        color: black;
+                        text-decoration: none;
+                                        
+                    &:hover{
+                        transform: scale(1.1);
+                        color: rgb(255, 255, 255);
+                }
+                }
+             }
+    
+            img{
+                  @include mixin-redes;
+                
+                    &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }    
+    }
+
     display: flex;
     @include mixin-style;
     justify-content:space-around;
@@ -47,90 +86,9 @@ header{
                 }
             }
     } 
-    
-@include mv(420px){ 
-   
-    header{
-        width: 23em;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        @include mixin-style;
-        background-image:linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0) );
-
-        li{
-            display: block;
-            padding: 0 20px;
-            margin: 5px;
-           
-            
-                a{          
-                    font-size: 700;
-                    color: black;
-                    text-decoration: none;
-                                    
-                &:hover{
-                    transform: scale(1.1);
-                    color: rgb(255, 255, 255);
-            }
-            }
-         }
-
-        img{
-              @include mixin-redes;
-            
-                &:hover{
-                transform: scale(1.2);
-            }
-        }
-
-    }
-
-
-}
 }
 
 
 
 
-@include mv(420px){ 
-   
-    header{
-        width: 23em;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        @include mixin-style;
-        background-image:linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0) );
-
-        li{
-            display: block;
-            padding: 0 20px;
-            margin: 5px;
-           
-            
-                a{          
-                    font-size: 700;
-                    color: black;
-                    text-decoration: none;
-                                    
-                &:hover{
-                    transform: scale(1.1);
-                    color: rgb(255, 255, 255);
-            }
-            }
-         }
-
-        img{
-              @include mixin-redes;
-            
-                &:hover{
-                transform: scale(1.2);
-            }
-        }
-
-    }
-
-
-}
 
