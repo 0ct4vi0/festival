@@ -24,7 +24,7 @@
 
 }
 
-@mixin mv( $media: 480px){
+@mixin mv( $media: 420px){
     @media only screen and (max-width: $media){
         @content;
     }

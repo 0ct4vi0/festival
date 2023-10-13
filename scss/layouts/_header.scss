@@ -2,93 +2,78 @@
 
 header{
 
-    @include mv(420px){ 
-   
-       header{
-            width: 22em;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            @include mixin-style;
-            background-image:linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0) );
-    
-            li{
-                display: block;
-                padding: 0 20px;
-                margin: 5px;
-               
-                
-                    a{          
-                        font-size: 700;
-                        color: black;
-                        text-decoration: none;
-                                        
-                    &:hover{
-                        transform: scale(1.1);
-                        color: rgb(255, 255, 255);
-                }
-                }
-             }
-    
-            img{
-                  @include mixin-redes;
-                
-                    &:hover{
-                    transform: scale(1.2);
-                }
-            }
-        }    
-    }
-
     display: flex;
-    @include mixin-style;
     justify-content:space-around;
     background-image:linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0) );
     align-items: center;
     height: 95px;
     padding: 5px 10%;
-
-        .nav-links{
-            list-style: none;
-            cursor: pointer;
-
-                li{
-                    display: inline-block;
-                    padding: 0 20px;
-                    transform: translateX(1em);
-
-                    a{          
-                        font-size: 700;
-                        color: black;
-                        text-decoration: none;
-                        margin-left:3rem ;
-                        
-                    &:hover{
-                        transform: scale(1.1);
-                        color: rgb(255, 255, 255);
-                    }
-
-                    }
-
-                    
-                }
-        }
     
-     .redes{
+@include mv(){
+    
+    background-image:linear-gradient(to left, rgb(230, 230, 230), rgb(238, 0, 0) );
+    width:21.5rem ;
+    height: 5rem;
+    
+}
+
+}
+
+.container{
+
+    .container-links{
+        list-style: none;
         cursor: pointer;
-        width: 210px;
 
-            img{
-                @include mixin-redes;
-    
+        li{
+                display: inline-block;
+                padding: 0 20px;
+                
+
+                a{          
+                    font-size: 21px;
+                    color: black;
+                    text-decoration: none;
+                    margin-left:3rem ;
+                    
                 &:hover{
-                    transform: scale(1.2);
+                    transform: scale(1.1);
+                    color: rgb(255, 255, 255);
                 }
-            }
-    } 
+
+            }        
+        }
+    }
+    // @include mv(){
+        
+       
+   
+    // }
 }
 
 
+.redes{
+    cursor: pointer;
+    width: 210px;
 
+        img{
+            @include mixin-redes;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+        @include mv{
+            img{
+                border-radius: 40%;
+                margin: 0px;
+                width: 50%;
+                height: 100%;
+               
+            }
+            
+        }
+} 
 
 
