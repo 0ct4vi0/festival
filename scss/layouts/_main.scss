@@ -1,3 +1,5 @@
+@import "../components/_mixin.scss";
+
 main{
    section{
            .logo{
@@ -5,8 +7,9 @@ main{
                 width: 500px;
                 height: 900px;
                 margin: 20px;
-                transform: translatex(23rem);
-            
+                margin-left: 23rem;
+                // transform: translatex(23rem);
+                
             }
         }
 
@@ -36,19 +39,63 @@ main{
                     width: 30rem;
                     margin-left: 3rem;
 
-                        a{
-                            &:hover{
-                                transform: scale(1.1);
-                                color: red;
-                            }
-                        }
+                        // a{
+                        //     &:hover{
+                        //         transform: scale(1.1);
+                        //         color: red;
+                        //     }
+                        // }
                 }   
             
                 img {
                     margin-left: 3rem;
                     width: 400px;
                     height: 300px;
-                }  
+                } 
         } 
+    
+        @include mv(){
+         
+            .logo{
+               
+                img{
+                    margin: 5%;
+                    margin-left: 25.9%;
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+
+            h1{
+                font-size: 96%;
+                margin: 3%;
+                margin-left:10% ;
+            }
+
+            .prueba{
+                width: 45%;
+                margin: 4%;
+                margin-left: 30%;
+            }
+
+            .intro{
+                
+                display: block;
+                margin: 5%;
+                width: 90%;
+
+                    p{
+                        width: 70%;
+                        font-size: 93%;
+                    }
+
+                    img{
+                        width: 70%;
+                        margin: 5%;
+                        margin-left:17% ;
+                    }
+            }
+
+        }
     }
 }

@@ -6,6 +6,12 @@
             width:15rem;
             border-bottom:2px solid rgb(243, 0, 0);
             margin: 10px 31rem 2rem;
+
+            @include mv(){
+                width: 48%;
+                margin: 4%;
+                margin-left: 30%;
+            }
     }
 
     h2{
@@ -14,6 +20,11 @@
         font-size: 27px;
         margin: 17px;
        
+        @include mv(){
+            margin: 0%;
+            font-size: 105%;
+            transform: translateX(6.3rem);
+        }
     }
 
      p{
@@ -26,6 +37,15 @@
                 color: red;
             }
         }
+
+        @include mv(){
+            margin: 3%;
+            transform: translateX(3rem);
+            font-size: 80%;
+           a{
+            font-size: 90%;
+           }
+        }
     }
     
     .suscripcion{
@@ -35,7 +55,7 @@
             font-size: 26px;
             transform: translateX(15rem);
             width: 860px;
-            // color :red;
+           
         }
 
         p{
@@ -45,7 +65,7 @@
 
         }
         .whats{
-            width: 120px;
+            width: 12rem;
             transform: translateX(34rem);
             margin-bottom: 60px;
             
@@ -59,7 +79,31 @@
                 } 
             }
         } 
-}
+
+        @include mv(){
+            
+            h2{
+                margin: 0%;
+                width: 90%;
+                font-size: 85%;
+                transform: translateX(3rem);
+            }
+
+            p{
+                margin: 3%;
+                transform: translateX(3rem);
+                font-size: 70%;
+                width: 70%;
+            }
+
+            .whats{
+                width: 10rem;
+                margin: 8%;
+                transform: translateX(5rem);
+                
+            }
+        }
+    }
 
 }
 
@@ -76,11 +120,12 @@
 
     .Lista-de-Participantes{
         margin: 15px;
+        width: 240px;
+        transform: translateX(31rem);
 
             li{
-                width: 200px;
-                transform: translate(32rem);
-                margin: 6px;
+               margin: 10px;
+               margin-left:50px;
             }
     }
 
@@ -88,8 +133,33 @@
         width:15rem;
         border-bottom:2px solid rgb(243, 0, 0);
         margin: 10px 31rem 2rem;
-}
+    }
 
+    @include mv(){
+
+        .prueba{
+            width: 48%;
+            margin: 6%;
+            margin-left: 29%;
+        }
+
+        h2{
+            margin: 0%;
+            font-size: 110%;
+            transform: translateX(8rem);
+        }
+
+        .Lista-de-Participantes{
+            margin: 3%;
+            // background-color: gray;
+            width: 60%;
+            transform: translateX(4.5rem);
+
+            li{
+                font-size: 90%;
+            }
+        }
+    }
 }
 
 
@@ -99,7 +169,7 @@
         width:15rem;
         border-bottom:2px solid rgb(243, 0, 0);
         margin: 10px 31rem 2rem;
-}
+    }
 
     h3{
         font-size: 30px;
@@ -132,6 +202,34 @@
 
     }
 
+    @include mv(){
+
+        .prueba{
+            width: 48%;
+            margin: 6%;
+            margin-left: 29%;
+        }
+
+        h3{
+            margin: 0%;
+            font-size: 110%;
+            transform: translateX(7.8rem);
+        }
+
+        img{
+            width: 100%;
+            margin: 0%;
+            transform: translateX(0%);
+        }
+
+        p{
+            // background-color: gray;
+            width:65% ;
+            font-size: 90%;
+            transform: translateX(3rem);
+        }
+
+    }
 }
 
 

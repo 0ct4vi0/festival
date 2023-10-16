@@ -29,4 +29,21 @@ footer{
         margin: 7px;
 
     }
+
+    @include mv(){
+        margin: 0%;
+        width: 100%;
+
+        .redes{
+            // background-color: gray;
+            img{
+                width: 30%;
+            }
+            p{
+                font-size: 6%;
+                
+            }
+        }
+    }
+
 }
