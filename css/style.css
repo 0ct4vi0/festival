@@ -43,27 +43,49 @@ header {
   transform: scale(1.1);
   color: rgb(255, 255, 255);
 }
+@media only screen and (max-width: 420px) {
+  .container .container-links {
+    margin: 0%;
+  }
+  .container .container-links li a {
+    font-size: 75%;
+  }
+}
 
 .redes {
   cursor: pointer;
-  width: 210px;
+  width: 200px;
 }
-.redes img {
-  width: 73px;
+.redes .ig {
+  width: 63px;
   height: 65px;
   border-radius: 40px;
-  margin: 14px;
-  transition: all 0.3s;
+  margin: 8%;
 }
-.redes img:hover {
-  transform: scale(1.2);
+.redes .ig:hover {
+  transform: scale(1.1);
+}
+.redes .face {
+  width: 53px;
+  height: 65px;
+  border-radius: 23px;
+  margin: 8%;
+}
+.redes .face:hover {
+  transform: scale(1.1);
 }
 @media only screen and (max-width: 420px) {
-  .redes img {
+  .redes .ig {
     border-radius: 40%;
+    margin: 5%;
+    width: 48%;
+    height: 50%;
+  }
+  .redes .face {
+    border-radius: 70%;
     margin: 3%;
-    width: 56%;
-    height: 100%;
+    width: 43%;
+    height: 40%;
   }
 }
 
@@ -104,7 +126,8 @@ main section .intro img {
 }
 @media only screen and (max-width: 420px) {
   main section .logo img {
-    margin: 5%;
+    margin-top: 130%;
+    margin: 4%;
     margin-left: 25.9%;
     width: 50%;
     height: 50%;
