@@ -126,9 +126,9 @@ main section .intro img {
 }
 @media only screen and (max-width: 420px) {
   main section .logo img {
-    margin-top: 130%;
     margin: 4%;
     margin-left: 25.9%;
+    margin-top: 5rem;
     width: 50%;
     height: 50%;
   }

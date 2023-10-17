@@ -59,11 +59,11 @@ main{
         @include mv(){
          
             .logo{
-               
+                // margin-top: 5%;
                 img{
-                    margin-top: 130%;
                     margin: 4%;
                     margin-left: 25.9%;
+                    margin-top: 5rem;
                     width: 50%;
                     height: 50%;
                 }
