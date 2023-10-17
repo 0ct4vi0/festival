@@ -1,11 +1,13 @@
 @import "../components/_mixin.scss";
 
 header{
-
+    position: fixed;
+    z-index: 6;
     display: flex;
     justify-content:space-around;
     background-image:linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0) );
     align-items: center;
+    width: 80rem;
     height: 95px;
     padding: 5px 10%;
     
@@ -18,7 +20,6 @@ header{
 }
 
 }
-
 .container{
 
     .container-links{
@@ -44,11 +45,6 @@ header{
             }        
         }
     }
-    // @include mv(){
-        
-       
-   
-    // }
 }
 
 
