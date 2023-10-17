@@ -143,6 +143,22 @@ main section .intro img {
   width: 350px;
   height: 300px;
 }
+@media only screen and (max-width: 420px) {
+  .fest {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    width: 15rem;
+    margin-left: 3.5rem;
+  }
+  .fest .elemento {
+    flex: 1 0 auto;
+    margin: 0 3rem;
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
 .parte-1 .prueba {
   width: 15rem;
   border-bottom: 2px solid rgb(243, 0, 0);
@@ -150,9 +166,9 @@ main section .intro img {
 }
 @media only screen and (max-width: 420px) {
   .parte-1 .prueba {
-    width: 48%;
+    width: 50%;
     margin: 4%;
-    margin-left: 30%;
+    margin-left: 27%;
   }
 }
 .parte-1 h2 {
@@ -164,6 +180,7 @@ main section .intro img {
 @media only screen and (max-width: 420px) {
   .parte-1 h2 {
     margin: 0%;
+    width: 10rem;
     font-size: 105%;
     transform: translateX(6.3rem);
   }
@@ -179,8 +196,9 @@ main section .intro img {
 @media only screen and (max-width: 420px) {
   .parte-1 p {
     margin: 3%;
-    transform: translateX(3rem);
-    font-size: 80%;
+    width: 17rem;
+    transform: translateX(2rem);
+    font-size: 88%;
   }
   .parte-1 p a {
     font-size: 90%;
@@ -222,19 +240,22 @@ main section .intro img {
 }
 @media only screen and (max-width: 420px) {
   .parte-1 .suscripcion h2 {
+    background-color: rgb(255, 253, 253);
     margin: 0%;
-    width: 90%;
-    font-size: 85%;
-    transform: translateX(3rem);
+    width: 15rem;
+    font-size: 87%;
+    transform: translateX(3.6rem);
   }
   .parte-1 .suscripcion p {
+    background-color: rgb(255, 255, 255);
     margin: 3%;
-    transform: translateX(3rem);
-    font-size: 70%;
-    width: 70%;
+    transform: translateX(4rem);
+    font-size: 90%;
+    width: 13rem;
+    height: 10rem;
   }
   .parte-1 .suscripcion .whats {
-    width: 10rem;
+    width: 9rem;
     margin: 8%;
     transform: translateX(5rem);
   }
@@ -270,6 +291,7 @@ main section .intro img {
     margin: 0%;
     font-size: 110%;
     transform: translateX(8rem);
+    width: 7rem;
   }
   .parte-2 .Lista-de-Participantes {
     margin: 3%;
@@ -371,6 +393,7 @@ footer P {
   }
   footer .redes p {
     font-size: 6%;
+    margin: 3%;
   }
 }
 

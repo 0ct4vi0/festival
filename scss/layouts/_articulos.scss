@@ -8,9 +8,9 @@
             margin: 10px 31rem 2rem;
 
             @include mv(){
-                width: 48%;
+                width: 50%;
                 margin: 4%;
-                margin-left: 30%;
+                margin-left: 27%;
             }
     }
 
@@ -21,7 +21,9 @@
         margin: 17px;
        
         @include mv(){
+            // background-color: rgb(116, 110, 110);
             margin: 0%;
+            width:10rem ;
             font-size: 105%;
             transform: translateX(6.3rem);
         }
@@ -39,9 +41,11 @@
         }
 
         @include mv(){
+            // background-color: gray;
             margin: 3%;
-            transform: translateX(3rem);
-            font-size: 80%;
+            width: 17rem;
+            transform: translateX(2rem);
+            font-size: 88%;
            a{
             font-size: 90%;
            }
@@ -83,21 +87,25 @@
         @include mv(){
             
             h2{
+                background-color: rgb(255, 253, 253);
                 margin: 0%;
-                width: 90%;
-                font-size: 85%;
-                transform: translateX(3rem);
+                width: 15rem;
+                font-size: 87%;
+                transform: translateX(3.6rem);
             }
 
             p{
+                background-color: rgb(255, 255, 255);
                 margin: 3%;
-                transform: translateX(3rem);
-                font-size: 70%;
-                width: 70%;
+                transform: translateX(4rem);
+                font-size: 90%;
+                width: 13rem;
+                height: 10rem;
             }
 
             .whats{
-                width: 10rem;
+                // background-color: gray;
+                width: 9rem;
                 margin: 8%;
                 transform: translateX(5rem);
                 
@@ -144,9 +152,11 @@
         }
 
         h2{
+            // background-color: gray;
             margin: 0%;
             font-size: 110%;
             transform: translateX(8rem);
+            width: 7rem;
         }
 
         .Lista-de-Participantes{
@@ -211,6 +221,7 @@
         }
 
         h3{
+            // background-color: gray;
             margin: 0%;
             font-size: 110%;
             transform: translateX(7.8rem);
