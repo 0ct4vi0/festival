@@ -12,17 +12,15 @@ header{
     padding: 5px 10%;
     
 @include mv(){
-    
     background-image:linear-gradient(to left, rgb(230, 230, 230), rgb(238, 0, 0) );
-    width:100%;
+    width:22rem;
     height: 5rem;
-    
 }
 
 }
-.container{
+.nav{
 
-    .container-links{
+    .nav-links{
         list-style: none;
         cursor: pointer;
 
@@ -41,19 +39,16 @@ header{
                     transform: scale(1.1);
                     color: rgb(255, 255, 255);
                 }
-
             }        
         }
     }
         @include mv() {
-            .container-links{
-                // display: inline-flex;
-                margin: 0%;
+            .container-links{          
                 
-               
-                li{
-                   
+                li{ 
+                
                     a{
+                        margin: 0%;
                         font-size: 75%;
                     }
                 }
@@ -83,7 +78,7 @@ header{
         .face{
             width: 53px;
             height: 65px;
-            border-radius: 230px;
+            border-radius: 50px;
             margin: 8%;
 
             &:hover{

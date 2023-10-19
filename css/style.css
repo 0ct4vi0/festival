@@ -20,34 +20,32 @@ header {
 @media only screen and (max-width: 420px) {
   header {
     background-image: linear-gradient(to left, rgb(230, 230, 230), rgb(238, 0, 0));
-    width: 100%;
+    width: 22rem;
     height: 5rem;
   }
 }
 
-.container .container-links {
+.nav .nav-links {
   list-style: none;
   cursor: pointer;
 }
-.container .container-links li {
+.nav .nav-links li {
   display: inline-block;
   padding: 0 20px;
 }
-.container .container-links li a {
+.nav .nav-links li a {
   font-size: 21px;
   color: black;
   text-decoration: none;
   margin-left: 3rem;
 }
-.container .container-links li a:hover {
+.nav .nav-links li a:hover {
   transform: scale(1.1);
   color: rgb(255, 255, 255);
 }
 @media only screen and (max-width: 420px) {
-  .container .container-links {
+  .nav .container-links li a {
     margin: 0%;
-  }
-  .container .container-links li a {
     font-size: 75%;
   }
 }
@@ -68,7 +66,7 @@ header {
 .redes .face {
   width: 53px;
   height: 65px;
-  border-radius: 230px;
+  border-radius: 50px;
   margin: 8%;
 }
 .redes .face:hover {
@@ -299,23 +297,56 @@ main section .intro img {
   grid-template-columns: repeat(3, 300px);
   row-gap: 5px;
   column-gap: 5px;
-  background-color: gray;
 }
 .parte-2 .Lista-de-Participantes .contencion {
-  background-color: rgb(161, 3, 3);
   width: 16rem;
   margin: 13px;
   margin-left: 13rem;
 }
-.parte-2 .Lista-de-Participantes .contencion .titulo_separacion {
-  margin: 4px;
+.parte-2 .Lista-de-Participantes .contencion h3 {
+  margin: 10px;
+  font-size: 19.5px;
   width: 8rem;
-  background-color: green;
+}
+.parte-2 .Lista-de-Participantes .contencion .titulo_separacion-1 {
+  width: 6rem;
+  transform: translateX(4.3rem);
+}
+.parte-2 .Lista-de-Participantes .contencion .titulo_separacion-2 {
+  transform: translateX(3.7rem);
+}
+.parte-2 .Lista-de-Participantes .contencion .titulo_separacion-3 {
+  transform: translateX(5.8rem);
+  width: 2.5rem;
+}
+.parte-2 .Lista-de-Participantes .contencion .titulo_separacion-4 {
+  transform: translateX(5.2rem);
+  width: 4rem;
+}
+.parte-2 .Lista-de-Participantes .contencion .titulo_separacion-5 {
+  transform: translateX(5.3rem);
+  width: 4rem;
 }
 .parte-2 .Lista-de-Participantes .contencion li {
-  width: 15rem;
+  transform: translateX(3rem);
+  width: 10rem;
   list-style: none;
-  margin: 5px;
+  margin: 12px;
+}
+.parte-2 .Lista-de-Participantes .contencion .li-dif-1 {
+  transform: translateX(4.4rem);
+}
+.parte-2 .Lista-de-Participantes .contencion .li-dif-2 {
+  transform: translateX(6rem);
+}
+.parte-2 .Lista-de-Participantes .contencion .li-dif-3 {
+  transform: translateX(5.7rem);
+}
+.parte-2 .Lista-de-Participantes .contencion .li-dif-4 {
+  transform: translateX(5.2rem);
+}
+.parte-2 .Lista-de-Participantes .contencion .li-dif-5 {
+  transform: translateX(3.8rem);
 }
 .parte-2 .prueba {
   width: 15rem;
@@ -334,14 +365,6 @@ main section .intro img {
     transform: translateX(8rem);
     width: 7rem;
   }
-  .parte-2 .Lista-de-Participantes {
-    margin: 3%;
-    width: 60%;
-    transform: translateX(4.5rem);
-  }
-  .parte-2 .Lista-de-Participantes li {
-    font-size: 90%;
-  }
 }
 
 .parte-3 .prueba {
@@ -351,19 +374,18 @@ main section .intro img {
 }
 .parte-3 h3 {
   font-size: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin: 30px;
   width: 130px;
   transform: translateX(31.5rem);
 }
 .parte-3 img {
-  margin-top: -2rem;
   margin: 30px;
   transform: translateX(16.5rem);
 }
 .parte-3 p {
   width: 270px;
-  transform: translate(31rem);
+  transform: translate(30rem);
   margin: 20px;
   margin-bottom: 40px;
   font-size: 18px;
