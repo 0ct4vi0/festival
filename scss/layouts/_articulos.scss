@@ -119,22 +119,39 @@
 .parte-2{
 
     h2{
-        width:250px ;
-        transform: translateX(32.3rem);
+        width:180px ;
+        transform: translateX(32.7rem);
         font-size: 28px;
         margin: 17px;
+        // background-color: gray;
    
     }
-
     .Lista-de-Participantes{
-        margin: 15px;
-        width: 240px;
-        transform: translateX(31rem);
+        display: grid;
+        grid-template-columns:repeat(3,300px);
+        row-gap: 5px;
+        column-gap: 5px;
+        background-color: gray;
+
+        .contencion{
+             background-color: rgb(161, 3, 3);
+             width:16rem;
+             margin: 13px;
+             margin-left: 13rem;
+
+            .titulo_separacion{
+                margin: 4px;
+                width: 8rem;
+                background-color: green;
+            }
 
             li{
-               margin: 10px;
-               margin-left:50px;
+                width: 15rem;
+                list-style:none ;
+                margin: 5px;
             }
+        }
+         
     }
 
     .prueba{
