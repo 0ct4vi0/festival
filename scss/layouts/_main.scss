@@ -40,13 +40,6 @@ main{
                     font-size: 19px;
                     width: 30rem;
                     margin-left: 3rem;
-
-                        // a{
-                        //     &:hover{
-                        //         transform: scale(1.1);
-                        //         color: red;
-                        //     }
-                        // }
                 }   
             
                 img {
@@ -59,11 +52,10 @@ main{
         @include mv(){
          
             .logo{
-                // margin-top: 5%;
                 img{
                     margin: 4%;
                     margin-left: 25.9%;
-                    margin-top: 5rem;
+                    margin-top: 8rem;
                     width: 50%;
                     height: 50%;
                 }

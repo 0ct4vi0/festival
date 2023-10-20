@@ -7,29 +7,27 @@ header{
     justify-content:space-around;
     background-image:linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0) );
     align-items: center;
-    width: 80rem;
+    width: 100%;
     height: 95px;
-    padding: 5px 10%;
     
 @include mv(){
-    background-image:linear-gradient(to left, rgb(230, 230, 230), rgb(238, 0, 0) );
-    width:22rem;
-    height: 5rem;
+    background-image:linear-gradient(to right, rgb(209, 0, 0), rgb(255, 254, 254) );
+    width: 35%;
+    height: 8em;
 }
 
 }
+
 .nav{
-
-    .nav-links{
+    .nav__links{
         list-style: none;
-        cursor: pointer;
+        cursor: pointer;}
 
-        li{
-                display: inline-block;
-                padding: 0 20px;
+        .nav-item{
+            display: inline-block;
+            padding: 0 20px;
                 
-
-                a{          
+                .nav__li{          
                     font-size: 21px;
                     color: black;
                     text-decoration: none;
@@ -41,20 +39,19 @@ header{
                 }
             }        
         }
-    }
+    
         @include mv() {
-            .container-links{          
-                
-                li{ 
-                
-                    a{
-                        margin: 0%;
-                        font-size: 75%;
-                    }
-                }
-            }
-           
+            display:grid;
+            grid-template-columns:repeat(2,135px);
+            column-gap: 7px;
 
+            .nav-item{
+                
+                .nav__li{
+                    font-size: 1.2em;
+                    margin: 0 auto;
+                }   
+            }
         }
 }
 
@@ -87,7 +84,7 @@ header{
         }
 
         @include mv{
-        
+            
             .ig{
                 border-radius: 40%;
                 margin: 5%;
@@ -96,7 +93,7 @@ header{
             }
 
             .face{
-                border-radius: 70%;
+                border-radius: 59%;
                 margin: 3%;
                 width: 43%;
                 height: 40%;

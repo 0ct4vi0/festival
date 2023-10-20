@@ -13,40 +13,44 @@ header {
   justify-content: space-around;
   background-image: linear-gradient(to right, rgb(230, 230, 230), rgb(238, 0, 0));
   align-items: center;
-  width: 80rem;
+  width: 100%;
   height: 95px;
-  padding: 5px 10%;
 }
 @media only screen and (max-width: 420px) {
   header {
-    background-image: linear-gradient(to left, rgb(230, 230, 230), rgb(238, 0, 0));
-    width: 22rem;
-    height: 5rem;
+    background-image: linear-gradient(to right, rgb(209, 0, 0), rgb(255, 254, 254));
+    width: 35%;
+    height: 8em;
   }
 }
 
-.nav .nav-links {
+.nav .nav__links {
   list-style: none;
   cursor: pointer;
 }
-.nav .nav-links li {
+.nav .nav-item {
   display: inline-block;
   padding: 0 20px;
 }
-.nav .nav-links li a {
+.nav .nav-item .nav__li {
   font-size: 21px;
   color: black;
   text-decoration: none;
   margin-left: 3rem;
 }
-.nav .nav-links li a:hover {
+.nav .nav-item .nav__li:hover {
   transform: scale(1.1);
   color: rgb(255, 255, 255);
 }
 @media only screen and (max-width: 420px) {
-  .nav .container-links li a {
-    margin: 0%;
-    font-size: 75%;
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(2, 135px);
+    column-gap: 7px;
+  }
+  .nav .nav-item .nav__li {
+    font-size: 1.2em;
+    margin: 0 auto;
   }
 }
 
@@ -80,7 +84,7 @@ header {
     height: 50%;
   }
   .redes .face {
-    border-radius: 70%;
+    border-radius: 59%;
     margin: 3%;
     width: 43%;
     height: 40%;
@@ -126,7 +130,7 @@ main section .intro img {
   main section .logo img {
     margin: 4%;
     margin-left: 25.9%;
-    margin-top: 5rem;
+    margin-top: 8rem;
     width: 50%;
     height: 50%;
   }
@@ -310,7 +314,7 @@ main section .intro img {
 }
 .parte-2 .Lista-de-Participantes .contencion .titulo_separacion-1 {
   width: 6rem;
-  transform: translateX(4.3rem);
+  transform: translateX(4rem);
 }
 .parte-2 .Lista-de-Participantes .contencion .titulo_separacion-2 {
   transform: translateX(3.7rem);
@@ -362,8 +366,14 @@ main section .intro img {
   .parte-2 h2 {
     margin: 0%;
     font-size: 110%;
-    transform: translateX(8rem);
+    transform: translateX(7.8rem);
     width: 7rem;
+  }
+  .parte-2 .Lista-de-Participantes {
+    width: 70%;
+    background-color: rgb(97, 95, 95);
+    margin: 1em;
+    margin-left: 3.5em;
   }
 }
 
