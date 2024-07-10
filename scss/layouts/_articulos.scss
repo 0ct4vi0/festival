@@ -1,99 +1,76 @@
 @import "../components/_mixin.scss";
-
 .parte-1{
-
-    .prueba{
-            width:15rem;
-            border-bottom:2px solid rgb(243, 0, 0);
-            margin: 10px 31rem 2rem;
-
-            @include mv(){
-                width: 50%;
-                margin: 4%;
-                margin-left: 27%;
-            }
-    }
-
-    h2{
-        width:270px ;
-        transform: translateX(30.4rem);
-        font-size: 27px;
-        margin: 17px;
-       
+    .prueba{ // linea divisoria ---------
+        width:17rem;
+        border:1px solid rgb(241, 120, 120);
+        margin:auto;
         @include mv(){
-            // background-color: rgb(116, 110, 110);
+            width: 50%;
+            margin: 4%;
+            margin-left: 27%;
+        }
+    }
+    h2{  //preguna 2-------------------
+        width: 300px;
+        font-size: 27px;
+        margin: 17px 30.7rem;   
+     @include mv(){
             margin: 0%;
             width:10rem ;
             font-size: 105%;
             transform: translateX(6.3rem);
         }
     }
-
-     p{
-        transform: translateX(29.5rem);
+     p{ //metodo de inscripcion------------
+        margin: 0px 27.8em;
         width: 350px;
-        
         a{
             &:hover{
                 transform: scale(1.1);
                 color: red;
             }
         }
-
-        @include mv(){
-            // background-color: gray;
-            margin: 3%;
-            width: 17rem;
-            transform: translateX(2rem);
-            font-size: 88%;
-           a{
-            font-size: 90%;
-           }
+    @include mv(){
+        margin: 3%;
+        width: 17rem;
+        transform: translateX(2rem);
+        font-size: 88%;
+            a{
+                font-size: 90%;
+            }
         }
-    }
-    
-    .suscripcion{
-
+    }   
+    .inscripcion{ 
         h2{
-            margin: 20px;
+            margin: 5px 11em;
             font-size: 26px;
-            transform: translateX(15rem);
-            width: 860px;
-           
+            width: 860px;   
         }
-
         p{
             width: 550px;
-            margin: 50px;
-            transform: translateX(22rem);
-
+            margin: 10px 23.3em;
+            text-align: center;
         }
         .whats{
             width: 12rem;
-            transform: translateX(34rem);
-            margin-bottom: 60px;
-            
-            a{    
-                @include mixin-boton; 
-                
-                &:hover{
-                    background-color:rgb(43, 255, 0);
-                    color: white;
-                    border: 5px solid green;
-                } 
-            }
+            margin: 40px 33.5em;
+        a{    
+            @include mixin-boton;             
+        &:hover{
+                background-color:rgb(43, 255, 0);
+                color: white;
+                border: 5px solid green;
+            } 
+        }
         } 
-
-        @include mv(){
-            
-            h2{
+    @include mv(){
+        h2{
                 background-color: rgb(255, 253, 253);
                 margin: 0%;
                 width: 15rem;
                 font-size: 87%;
                 transform: translateX(3.6rem);
             }
-
             p{
                 background-color: rgb(255, 255, 255);
                 margin: 3%;
@@ -102,16 +79,12 @@
                 width: 13rem;
                 height: 10rem;
             }
-
             .whats{
                 // background-color: gray;
                 width: 9rem;
                 margin: 8%;
-                transform: translateX(5rem);
-                
+                transform: translateX(5rem);          
             }
         }
     }
 }
-
-

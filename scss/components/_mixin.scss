@@ -1,14 +1,14 @@
+@mixin mv( $media: 420px){
+    @media only screen and (max-width: $media){
+        @content;
+    }
+}
 @mixin mixin-redes {
     width: 73px;
     height: 65px;
     border-radius: 40px; 
-    margin: 14px;
     transition: all 0.3s;
-
-    
-
 }
-
 @mixin mixin-boton{
     width: 100px;
     background-color:white;
@@ -21,19 +21,4 @@
     border-radius: 13px;
     list-style-type: none;
     text-decoration: none;
-
-}
-
-@mixin mv( $media: 420px){
-    @media only screen and (max-width: $media){
-        @content;
-    }
-}
-
-@mixin mixin-style{
-    h1{font-size: 3.5em;}
-    h2{font-size: 2.7em;}
-    h3{font-size: 2rem;}
-    p{font-size: 1.25em;}
-    ul{list-style:none;}
 }

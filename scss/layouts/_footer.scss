@@ -1,5 +1,4 @@
 @import "../components/_mixin.scss";
-
 footer{
     background-image:linear-gradient(to right, rgb(255, 255, 255), red );
     color: rgb(0, 0, 0);
@@ -7,43 +6,34 @@ footer{
         cursor: pointer;
         width: 210px;
         margin: 3px;
-            img{
-                @include mixin-redes;
-    
-                &:hover{
-                    transform: scale(1.2);
-                }
-            }
-    } 
-
+    img{
+        @include mixin-redes;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+} 
     ul{
         margin: 10px;
         li{
             margin: 13px;
             list-style: none;
         }
-
     }
-
     P{
         margin: 7px;
-
     }
-
-    @include mv(){
-        margin: 0%;
-        width: 100%;
-
-        .redes{
-            // background-color: gray;
-            img{
-                width: 30%;
+@include mv(){
+    margin: 0%;
+    width: 100%;
+    .redes{
+        img{
+            width: 30%;
             }
-            p{
-                font-size: 6%;
-                margin: 3%;
+        p{
+            font-size: 6%;
+            margin: 3%;
             }
         }
     }
-
 }

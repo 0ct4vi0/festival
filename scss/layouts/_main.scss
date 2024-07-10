@@ -2,95 +2,71 @@
 
 main{
    section{
-           .logo{
-
-             img{
+        .logo{
+             img{//IMAGEN INICIAL----------------
                 width: 500px;
                 height: 900px;
-                margin: 20px;
-                margin-top: 5rem;
-                margin-left: 23rem;
-                // transform: translatex(23rem);
-                
+                margin:80px 23em;
             }
         }
-
         h1{
             font-size: 34px;
-            margin: 10px 0px 0px 0px;  
-            margin-left: 20rem;
+            margin:5px 20rem;
         }
-
-        .prueba{
-            width:15rem;
+        .prueba{ // LINEA DIVISORIA --------------
+            width:17rem;
             border-bottom:2px solid rgb(241, 120, 120);
-            margin: 10px 30rem 2rem;
-            
+            margin:auto;  
         }
-
-        .intro{
+        .intro{//CUERPO DE LA EXPLICACION
             display: flex;
             justify-content: space-around;
-            margin: 10px;
-            padding: 10px;
-            background-color: rgb(233, 229, 229);
-
-                p{
-                    padding-top: 2rem;
-                    font-size: 19px;
-                    width: 30rem;
-                    margin-left: 3rem;
-                }   
-            
-                img {
-                    margin-left: 3rem;
-                    width: 400px;
-                    height: 300px;
-                } 
+            margin: 10px 50px;
+            padding: 30px;
+            text-align: center;
+            background-color: rgb(199, 193, 193);
+            p{
+                padding-top: 2rem;
+                font-size: 19px;
+                width: 30rem;
+            }   
+            img {
+                width: 400px;
+                height: 300px;
+            } 
         } 
-    
-        @include mv(){
-         
-            .logo{
-                img{
-                    margin: 4%;
-                    margin-left: 25.9%;
-                    margin-top: 8rem;
-                    width: 50%;
-                    height: 50%;
+@include mv(){ //PARTE MOBILE-------------
+        .logo{
+            img{
+                margin:6rem 5.7rem 0;
+                width: 50%;
+                height: 50%;
+            }
+        }
+        h1{
+            font-size: 100%;
+            margin: 2% 10%;
+        }
+       .prueba{ // LINEA DIVISORIA
+            width: 45%;
+            margin: 0.5em 30%;
+            }
+        .intro{//CUERPO DE LA EXPLICACION
+                display:inline-block;
+                margin: 0px 5%;
+                width: 90%;
+                padding: 0%;
+                text-align: center;
+            p{
+                margin: 0px 15%;
+                width: 70%;
+                font-size: 93%;
+                }
+            img{
+                width: 80%;
+                margin: 3% 6%;
                 }
             }
-
-            h1{
-                font-size: 96%;
-                margin: 3%;
-                margin-left:10% ;
-            }
-
-            .prueba{
-                width: 45%;
-                margin: 4%;
-                margin-left: 30%;
-            }
-
-            .intro{
-                
-                display: block;
-                margin: 5%;
-                width: 90%;
-
-                    p{
-                        width: 70%;
-                        font-size: 93%;
-                    }
-
-                    img{
-                        width: 70%;
-                        margin: 5%;
-                        margin-left:17% ;
-                    }
-            }
-
         }
     }
 }

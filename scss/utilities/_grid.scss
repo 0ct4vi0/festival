@@ -1,33 +1,27 @@
 @import "../components/_mixin.scss";
 
-.fest{
+.fest{//cuadricula de imagenes 
     display: grid;
     grid-template-columns: repeat(3,380px);
     row-gap: 5px;
     column-gap: 5px;
-
-    
      img {
-        transform: translateX(7rem);
-        margin: 15px;
+        margin:13px 6.6em;
         width: 350px;
         height: 300px;
         } 
-
-        @include mv(){
+        @include mv(){ //parte mobile
             display: flex;
             flex-wrap: nowrap;
             overflow: scroll;
             width: 15rem;
             margin-left: 3.5rem;
             // background-color: gray;
-
-            .elemento{
+       .elemento{
                 flex: 1 0 auto;
                 margin: 0 3rem;
                 width: 10rem ;
                 height: 10rem;
             }
         }
-
 }
