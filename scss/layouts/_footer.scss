@@ -1,27 +1,21 @@
 @import "../components/_mixin.scss";
 footer{
+    padding: 10px;
     background-image:linear-gradient(to right, rgb(255, 255, 255), red );
     color: rgb(0, 0, 0);
     .redes{
-        cursor: pointer;
-        width: 210px;
-        margin: 3px;
-    img{
-        @include mixin-redes;
-        &:hover{
-            transform: scale(1.2);
+        img{
+            @include mixin-redes;
+            &:hover{
+                transform: scale(1.2);
+            }
         }
-    }
-} 
+    } 
     ul{
-        margin: 10px;
         li{
-            margin: 13px;
+            margin: 13px 0;
             list-style: none;
         }
-    }
-    P{
-        margin: 7px;
     }
 @include mv(){
     margin: 0%;

@@ -20,7 +20,7 @@ header {
   header {
     background-image: linear-gradient(to right, rgb(209, 0, 0), rgb(219, 212, 212));
     width: 100%;
-    height: 6em;
+    height: 23%;
   }
 }
 
@@ -45,7 +45,7 @@ header {
     column-gap: 1px;
   }
   .nav .nav-item {
-    margin: 0.05em 2em;
+    margin: 0em 1em;
   }
   .nav .nav-item .nav__li {
     font-size: 1em;
@@ -68,10 +68,14 @@ header {
   transform: scale(1.2);
 }
 
+main section .logo {
+  display: flex;
+  justify-content: center;
+}
 main section .logo img {
   width: 500px;
   height: 900px;
-  margin: 80px 23em;
+  margin: 80px;
 }
 main section h1 {
   font-size: 34px;
@@ -79,8 +83,8 @@ main section h1 {
 }
 main section .prueba {
   width: 17rem;
-  border-bottom: 2px solid rgb(241, 120, 120);
   margin: auto;
+  border-bottom: 4px solid rgb(241, 120, 120);
 }
 main section .intro {
   display: flex;
@@ -101,21 +105,21 @@ main section .intro img {
 }
 @media only screen and (max-width: 420px) {
   main section .logo img {
-    margin: 6rem 5.7rem 0;
+    margin-top: 6rem;
     width: 50%;
     height: 50%;
   }
   main section h1 {
     font-size: 100%;
-    margin: 2% 10%;
+    margin: 0px 10% 20px;
   }
   main section .prueba {
-    width: 45%;
-    margin: 0.5em 30%;
+    width: 50%;
+    margin: auto;
   }
   main section .intro {
     display: inline-block;
-    margin: 0px 5%;
+    margin: 10px 5%;
     width: 90%;
     padding: 0%;
     text-align: center;
@@ -123,11 +127,12 @@ main section .intro img {
   main section .intro p {
     margin: 0px 15%;
     width: 70%;
-    font-size: 93%;
+    font-size: 90%;
   }
   main section .intro img {
     width: 80%;
-    margin: 3% 6%;
+    height: 80%;
+    margin: 5% 6%;
   }
 }
 
@@ -148,9 +153,10 @@ main section .intro img {
     flex-wrap: nowrap;
     overflow: scroll;
     width: 15rem;
-    margin-left: 3.5rem;
+    margin: 16PX 3.5rem;
   }
   .fest .elemento {
+    transition: all 0.5s;
     flex: 1 0 auto;
     margin: 0 3rem;
     width: 10rem;
@@ -158,34 +164,24 @@ main section .intro img {
   }
 }
 
-.parte-1 .prueba {
-  width: 17rem;
-  border: 1px solid rgb(241, 120, 120);
-  margin: auto;
-}
-@media only screen and (max-width: 420px) {
-  .parte-1 .prueba {
-    width: 50%;
-    margin: 4%;
-    margin-left: 27%;
-  }
+.parte-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
 }
 .parte-1 h2 {
   width: 300px;
   font-size: 27px;
-  margin: 17px 30.7rem;
+  margin: 10px;
 }
 @media only screen and (max-width: 420px) {
   .parte-1 h2 {
     margin: 0%;
-    width: 10rem;
-    font-size: 105%;
-    transform: translateX(6.3rem);
+    width: auto;
+    font-size: 25px;
   }
-}
-.parte-1 p {
-  margin: 0px 27.8em;
-  width: 350px;
 }
 .parte-1 p a:hover {
   transform: scale(1.1);
@@ -195,26 +191,29 @@ main section .intro img {
   .parte-1 p {
     margin: 3%;
     width: 17rem;
-    transform: translateX(2rem);
-    font-size: 88%;
+    font-size: 16px;
   }
   .parte-1 p a {
-    font-size: 90%;
+    font-size: 100%;
   }
 }
+.parte-1 .inscripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .parte-1 .inscripcion h2 {
-  margin: 5px 11em;
+  margin: 5px;
   font-size: 26px;
   width: 860px;
 }
 .parte-1 .inscripcion p {
   width: 550px;
-  margin: 10px 23.3em;
-  text-align: center;
+  margin: 10px;
 }
 .parte-1 .inscripcion .whats {
   width: 12rem;
-  margin: 40px 33.5em;
+  margin: 40px;
 }
 .parte-1 .inscripcion .whats a {
   width: 100px;
@@ -257,11 +256,6 @@ main section .intro img {
   }
 }
 
-.parte-2 .prueba {
-  width: 17rem;
-  border: 1px solid rgb(241, 120, 120);
-  margin: auto;
-}
 .parte-2 h2 {
   width: 180px;
   font-size: 28px;
@@ -310,12 +304,6 @@ main section .intro img {
   }
 }
 
-.parte-3 .prueba {
-  width: 17rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .parte-3 h3 {
   font-size: 30px;
   margin: 10px 33.5rem;
@@ -323,16 +311,18 @@ main section .intro img {
 }
 .parte-3 .img_cont {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
-.parte-3 p {
+.parte-3 #objeto {
+  display: flex;
+  justify-content: center;
+}
+.parte-3 #objeto p {
   width: 270px;
-  margin: 30px 31em;
+  margin: 30px;
   font-size: 18px;
 }
-.parte-3 p a:hover {
+.parte-3 #objeto p a:hover {
   transform: scale(1.1);
   color: red;
 }
@@ -360,13 +350,9 @@ main section .intro img {
 }
 
 footer {
+  padding: 10px;
   background-image: linear-gradient(to right, rgb(255, 255, 255), red);
   color: rgb(0, 0, 0);
-}
-footer .redes {
-  cursor: pointer;
-  width: 210px;
-  margin: 3px;
 }
 footer .redes img {
   width: 73px;
@@ -377,15 +363,9 @@ footer .redes img {
 footer .redes img:hover {
   transform: scale(1.2);
 }
-footer ul {
-  margin: 10px;
-}
 footer ul li {
-  margin: 13px;
+  margin: 13px 0;
   list-style: none;
-}
-footer P {
-  margin: 7px;
 }
 @media only screen and (max-width: 420px) {
   footer {

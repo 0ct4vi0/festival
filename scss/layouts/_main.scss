@@ -3,22 +3,26 @@
 main{
    section{
         .logo{
-             img{//IMAGEN INICIAL----------------
+            display: flex;
+            justify-content: center;
+             img{//----------IMAGEN INICIAL----------------
                 width: 500px;
                 height: 900px;
-                margin:80px 23em;
+                margin:80px;
             }
         }
         h1{
             font-size: 34px;
             margin:5px 20rem;
         }
-        .prueba{ // LINEA DIVISORIA --------------
+//------------LINEA DIVISORIA----------------- 
+        .prueba{
             width:17rem;
-            border-bottom:2px solid rgb(241, 120, 120);
-            margin:auto;  
+            margin: auto;
+            border-bottom:4px solid rgb(241, 120, 120);
         }
-        .intro{//CUERPO DE LA EXPLICACION
+//-------------CUERPO DE LA EXPLICACION-------
+        .intro{
             display: flex;
             justify-content: space-around;
             margin: 10px 50px;
@@ -35,36 +39,39 @@ main{
                 height: 300px;
             } 
         } 
-@include mv(){ //PARTE MOBILE-------------
+ //-------------PARTE MOBILE-------------
+@include mv(){
         .logo{
             img{
-                margin:6rem 5.7rem 0;
+                margin-top:6rem;
                 width: 50%;
                 height: 50%;
             }
         }
         h1{
             font-size: 100%;
-            margin: 2% 10%;
+            margin:0px 10% 20px;
         }
-       .prueba{ // LINEA DIVISORIA
-            width: 45%;
-            margin: 0.5em 30%;
+       .prueba{
+            width:50%;
+            margin:auto;
             }
-        .intro{//CUERPO DE LA EXPLICACION
+//-----CUERPO DE LA EXPLICACION----------
+        .intro{
                 display:inline-block;
-                margin: 0px 5%;
+                margin: 10px 5%;
                 width: 90%;
                 padding: 0%;
                 text-align: center;
             p{
                 margin: 0px 15%;
                 width: 70%;
-                font-size: 93%;
+                font-size: 90%;
                 }
             img{
                 width: 80%;
-                margin: 3% 6%;
+                height:80%;
+                margin: 5% 6%;
                 }
             }
         }

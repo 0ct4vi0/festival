@@ -1,6 +1,5 @@
 @import "../components/_mixin.scss";
-
-.fest{//cuadricula de imagenes 
+.fest{
     display: grid;
     grid-template-columns: repeat(3,380px);
     row-gap: 5px;
@@ -10,18 +9,19 @@
         width: 350px;
         height: 300px;
         } 
-        @include mv(){ //parte mobile
+ //--------PARTE MOBILE--------------
+    @include mv(){
             display: flex;
             flex-wrap: nowrap;
             overflow: scroll;
             width: 15rem;
-            margin-left: 3.5rem;
-            // background-color: gray;
+            margin:16PX 3.5rem;
        .elemento{
+                transition:all  0.5s;
                 flex: 1 0 auto;
                 margin: 0 3rem;
                 width: 10rem ;
                 height: 10rem;
-            }
         }
+    }
 }

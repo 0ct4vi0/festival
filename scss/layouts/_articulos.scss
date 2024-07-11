@@ -1,72 +1,67 @@
 @import "../components/_mixin.scss";
 .parte-1{
-    .prueba{ // linea divisoria ---------
-        width:17rem;
-        border:1px solid rgb(241, 120, 120);
-        margin:auto;
-        @include mv(){
-            width: 50%;
-            margin: 4%;
-            margin-left: 27%;
-        }
-    }
-    h2{  //preguna 2-------------------
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+//----------------PREGUNTA 2-------------------
+    h2{  
         width: 300px;
         font-size: 27px;
-        margin: 17px 30.7rem;   
-     @include mv(){
+        margin: 10px;   
+        @include mv(){
             margin: 0%;
-            width:10rem ;
-            font-size: 105%;
-            transform: translateX(6.3rem);
+            width:auto;
+            font-size: 25px;
         }
     }
-     p{ //metodo de inscripcion------------
-        margin: 0px 27.8em;
-        width: 350px;
+ //--------------IINSCRIPCION PERSONAL------------
+    p{
         a{
             &:hover{
                 transform: scale(1.1);
                 color: red;
             }
         }
-    @include mv(){
-        margin: 3%;
-        width: 17rem;
-        transform: translateX(2rem);
-        font-size: 88%;
+        @include mv(){
+            margin: 3%;
+            width: 17rem;
+            font-size: 16px;
             a{
-                font-size: 90%;
+                font-size: 100%;
             }
         }
-    }   
-    .inscripcion{ 
+    }//-----------INSCRIPCION LOCAL------------   
+    .inscripcion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         h2{
-            margin: 5px 11em;
+            margin: 5px;
             font-size: 26px;
             width: 860px;   
         }
         p{
             width: 550px;
-            margin: 10px 23.3em;
-            text-align: center;
+            margin: 10px;
         }
         .whats{
             width: 12rem;
-            margin: 40px 33.5em;
-        a{    
-            @include mixin-boton;             
-        &:hover{
-                background-color:rgb(43, 255, 0);
-                color: white;
-                border: 5px solid green;
-            } 
-        }
+            margin: 40px;
+            a{    
+                @include mixin-boton;             
+            &:hover{
+                    background-color:rgb(43, 255, 0);
+                    color: white;
+                    border: 5px solid green;
+                } 
+            }
         } 
-    @include mv(){
+        @include mv(){
         h2{
-                background-color: rgb(255, 253, 253);
-                margin: 0%;
+            background-color: rgb(255, 253, 253);
+            margin: 0%;
                 width: 15rem;
                 font-size: 87%;
                 transform: translateX(3.6rem);
