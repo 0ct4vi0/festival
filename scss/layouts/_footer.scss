@@ -17,13 +17,10 @@ footer{
             list-style: none;
         }
     }
-@include mv(){
-    margin: 0%;
-    width: 100%;
-    .redes{
-        img{
-            width: 30%;
-            }
+    @include mv(){
+        margin: 0%;
+        width: 100%;
+        .redes{
         p{
             font-size: 6%;
             margin: 3%;

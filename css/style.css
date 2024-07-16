@@ -136,31 +136,63 @@ main section .intro img {
   }
 }
 
-.fest {
+.fest ul {
   display: grid;
   grid-template-columns: repeat(3, 380px);
   row-gap: 5px;
   column-gap: 5px;
 }
-.fest img {
-  margin: 13px 6.6em;
+.fest ul li {
+  margin: 13px 6em;
+  list-style: none;
+}
+.fest ul li .elemento {
   width: 350px;
   height: 300px;
 }
 @media only screen and (max-width: 420px) {
   .fest {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    width: 15rem;
-    margin: 16PX 3.5rem;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 1px auto 0;
   }
-  .fest .elemento {
-    transition: all 0.5s;
-    flex: 1 0 auto;
-    margin: 0 3rem;
-    width: 10rem;
-    height: 10rem;
+  .fest ul {
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: slide 10s infinite alternate ease-in-out;
+  }
+  .fest ul li {
+    list-style: none;
+    width: 100%;
+    margin: 1% 2%;
+  }
+  @keyframes slide {
+    0% {
+      margin-left: 0%;
+    }
+    20% {
+      margin-left: 0%;
+    }
+    25% {
+      margin-left: -100%;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    50% {
+      margin-left: -200%;
+    }
+    70% {
+      margin-left: -200%;
+    }
+    75% {
+      margin-left: -300%;
+    }
+    95% {
+      margin-left: -300%;
+    }
   }
 }
 
@@ -280,27 +312,19 @@ main section .intro img {
   margin: 10px;
 }
 @media only screen and (max-width: 420px) {
-  .parte-2 .prueba {
-    width: 48%;
-    margin: 6%;
-    margin-left: 29%;
-  }
   .parte-2 h2 {
-    margin: 0%;
-    font-size: 110%;
-    transform: translateX(7.8rem);
+    margin: 2% 28%;
+    font-size: 30px;
     width: 7rem;
   }
   .parte-2 .Lista-de-Participantes {
     display: block;
     width: 70%;
-    margin: 1em;
-    margin-left: 3.5em;
+    margin: 1em auto;
   }
   .parte-2 .Lista-de-Participantes .list__item {
     width: 16rem;
-    margin: 0;
-    margin-left: 0rem;
+    margin: 0px;
   }
 }
 
@@ -328,14 +352,12 @@ main section .intro img {
 }
 @media only screen and (max-width: 420px) {
   .parte-3 .prueba {
-    width: 48%;
-    margin: 6%;
-    margin-left: 29%;
+    width: 50%;
+    margin: auto;
   }
   .parte-3 h3 {
-    margin: 0%;
-    font-size: 110%;
-    transform: translateX(7.8rem);
+    margin: 3% 29%;
+    font-size: 30px;
   }
   .parte-3 img {
     width: 100%;
@@ -345,7 +367,6 @@ main section .intro img {
   .parte-3 p {
     width: 65%;
     font-size: 90%;
-    transform: translateX(3rem);
   }
 }
 
@@ -371,9 +392,6 @@ footer ul li {
   footer {
     margin: 0%;
     width: 100%;
-  }
-  footer .redes img {
-    width: 30%;
   }
   footer .redes p {
     font-size: 6%;

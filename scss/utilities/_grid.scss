@@ -1,27 +1,52 @@
 @import "../components/_mixin.scss";
 .fest{
-    display: grid;
-    grid-template-columns: repeat(3,380px);
-    row-gap: 5px;
-    column-gap: 5px;
-     img {
-        margin:13px 6.6em;
-        width: 350px;
-        height: 300px;
-        } 
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3,380px);
+        row-gap: 5px;
+        column-gap: 5px;
+        li{
+            margin:13px 6em;
+            list-style: none;
+            .elemento{
+                width: 350px;
+                height: 300px;
+                } 
+        }
+    }
  //--------PARTE MOBILE--------------
     @include mv(){
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: 1px auto 0;
+        ul{
             display: flex;
-            flex-wrap: nowrap;
-            overflow: scroll;
-            width: 15rem;
-            margin:16PX 3.5rem;
-       .elemento{
-                transition:all  0.5s;
-                flex: 1 0 auto;
-                margin: 0 3rem;
-                width: 10rem ;
-                height: 10rem;
+            padding: 0%;
+            width: 400%;
+            animation:  slide 10s infinite alternate ease-in-out;
+            li{
+                list-style: none;
+                width: 100%;
+                margin:1% 2%;
+                .elemento{
+                   
+                }
+            }
+        }
+        @keyframes slide {
+            0% {margin-left: 0%;}
+            20% {margin-left: 0%;}
+
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+
+            75% {margin-left: -300%;}
+            95% {margin-left: -300%;}
+
         }
     }
 }
