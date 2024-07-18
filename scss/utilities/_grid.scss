@@ -5,8 +5,8 @@
         grid-template-columns: repeat(3,380px);
         row-gap: 5px;
         column-gap: 5px;
+        margin:13px 6em;
         li{
-            margin:13px 6em;
             list-style: none;
             .elemento{
                 width: 350px;
@@ -15,35 +15,30 @@
         }
     }
  //--------PARTE MOBILE--------------
-    @include mv(){
-        overflow: hidden;
-        width: 100%;
-        height: auto;
-        margin: 1px auto 0;
-        ul{
+    @include mv() {
+        ul {
+            overflow: hidden;
             display: flex;
-            padding: 0%;
-            width: 400%;
-            animation:  slide 10s infinite alternate ease-in-out;
-            li{
-                list-style: none;
-                width: 100%;
-                margin:1% 2%;
+            width: 85%;
+            margin: 3% auto;
+            list-style: none;
+            li {
+                animation: slide 16s infinite alternate ease-in-out;
+                img {
+                    width: 100%;
+                    height: auto; /* Asegura que la altura se ajuste automáticamente */
+                }
             }
         }
         @keyframes slide {
-            0% {margin-left: 0%;}
-            20% {margin-left: 0%;}
-
-            25% {margin-left: -100%;}
-            45% {margin-left: -100%;}
-
-            50% {margin-left: -200%;}
-            70% {margin-left: -200%;}
-
-            75% {margin-left: -300%;}
-            95% {margin-left: -300%;}
-
+            0% { transform: translateX(0); }
+            25% { transform: translateX(0); }
+            30% { transform: translateX(-100%); }
+            55% { transform: translateX(-100%); }
+            60% { transform: translateX(-200%); }
+            85% { transform: translateX(-200%); }
+            90% { transform: translateX(-300%); }
+            100% { transform: translateX(-300%); }
         }
     }
 }

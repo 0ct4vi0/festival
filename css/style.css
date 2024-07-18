@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -20,7 +21,7 @@ header {
   header {
     background-image: linear-gradient(to right, rgb(209, 0, 0), rgb(219, 212, 212));
     width: 100%;
-    height: 23%;
+    height: 12%;
   }
 }
 
@@ -141,9 +142,9 @@ main section .intro img {
   grid-template-columns: repeat(3, 380px);
   row-gap: 5px;
   column-gap: 5px;
+  margin: 13px 6em;
 }
 .fest ul li {
-  margin: 13px 6em;
   list-style: none;
 }
 .fest ul li .elemento {
@@ -151,47 +152,44 @@ main section .intro img {
   height: 300px;
 }
 @media only screen and (max-width: 420px) {
-  .fest {
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    margin: 1px auto 0;
-  }
   .fest ul {
+    overflow: hidden;
     display: flex;
-    padding: 0%;
-    width: 400%;
-    animation: slide 10s infinite alternate ease-in-out;
+    width: 85%;
+    margin: 3% auto;
+    list-style: none;
   }
   .fest ul li {
-    list-style: none;
+    animation: slide 16s infinite alternate ease-in-out;
+  }
+  .fest ul li img {
     width: 100%;
-    margin: 1% 2%;
+    height: auto; /* Asegura que la altura se ajuste automáticamente */
   }
   @keyframes slide {
     0% {
-      margin-left: 0%;
-    }
-    20% {
-      margin-left: 0%;
+      transform: translateX(0);
     }
     25% {
-      margin-left: -100%;
+      transform: translateX(0);
     }
-    45% {
-      margin-left: -100%;
+    30% {
+      transform: translateX(-100%);
     }
-    50% {
-      margin-left: -200%;
+    55% {
+      transform: translateX(-100%);
     }
-    70% {
-      margin-left: -200%;
+    60% {
+      transform: translateX(-200%);
     }
-    75% {
-      margin-left: -300%;
+    85% {
+      transform: translateX(-200%);
     }
-    95% {
-      margin-left: -300%;
+    90% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-300%);
     }
   }
 }
@@ -351,22 +349,15 @@ main section .intro img {
   color: red;
 }
 @media only screen and (max-width: 420px) {
-  .parte-3 .prueba {
-    width: 50%;
-    margin: auto;
-  }
   .parte-3 h3 {
     margin: 3% 29%;
     font-size: 30px;
   }
   .parte-3 img {
     width: 100%;
-    margin: 0%;
-    transform: translateX(0%);
   }
-  .parte-3 p {
-    width: 65%;
-    font-size: 90%;
+  .parte-3 #objeto p {
+    font-size: 15px;
   }
 }
 
@@ -393,9 +384,13 @@ footer ul li {
     margin: 0%;
     width: 100%;
   }
-  footer .redes p {
-    font-size: 6%;
-    margin: 3%;
+  footer ul li {
+    margin: 2% 3%;
+    font-size: 16px;
+  }
+  footer p {
+    margin: 2% 3%;
+    font-size: 16px;
   }
 }
 

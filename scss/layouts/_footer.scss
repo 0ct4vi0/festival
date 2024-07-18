@@ -20,11 +20,15 @@ footer{
     @include mv(){
         margin: 0%;
         width: 100%;
-        .redes{
-        p{
-            font-size: 6%;
-            margin: 3%;
+        ul{
+            li{
+                margin:2% 3%;
+                font-size: 16px;
             }
+        }
+        p{
+            margin:2% 3%;
+            font-size: 16px;
         }
     }
 }
