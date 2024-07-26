@@ -5,20 +5,25 @@ main{
         .logo{
             display: flex;
             justify-content: center;
-             img{//----------IMAGEN INICIAL----------------
+             img{
                 width: 500px;
                 height: 900px;
-                margin:80px;
+                margin-top: 80px;
             }
         }
-        h1{
-            font-size: 34px;
-            margin:5px 20rem;
+        .titulo-de-entrada{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 20px;
+            h1{
+                font-size: 34px;
+            }
         }
 //------------LINEA DIVISORIA----------------- 
         .prueba{
-            width:17rem;
-            margin: auto;
+            width:20rem;
+            margin:20px auto;
             border-bottom:4px solid rgb(241, 120, 120);
         }
 //-------------CUERPO DE LA EXPLICACION-------
@@ -43,17 +48,19 @@ main{
 @include mv(){
         .logo{
             img{
-                margin-top:6rem;
+                margin-top:6.5rem;
                 width: 50%;
                 height: 50%;
             }
         }
-        h1{
-            font-size: 100%;
-            margin:0px 10% 20px;
+        .titulo-de-entrada{
+            h1{
+                // width: 100%;
+                font-size: 100%;
+            }
         }
        .prueba{
-            width:50%;
+            width:70%;
             margin:auto;
             }
 //-----CUERPO DE LA EXPLICACION----------
