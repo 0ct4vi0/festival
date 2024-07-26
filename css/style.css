@@ -141,15 +141,13 @@ main section .intro img {
   }
 }
 
-.fest {
-  display: flex;
-}
 .fest ul {
   display: grid;
   grid-template-columns: repeat(3, 380px);
   row-gap: 5px;
   column-gap: 5px;
-  margin: 10px auto;
+  margin: 10px 5.5rem;
+  padding: 1%;
 }
 .fest ul li {
   list-style: none;

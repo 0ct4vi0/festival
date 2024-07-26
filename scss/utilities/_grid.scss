@@ -1,12 +1,12 @@
 @import "../components/_mixin.scss";
 .fest{
-    display: flex;
     ul{
         display: grid;
         grid-template-columns: repeat(3,380px);
         row-gap: 5px;
         column-gap: 5px;
-        margin: 10px auto;
+        margin: 10px 5.5rem;
+        padding: 1%;
         li{
             list-style: none;
             .elemento{
