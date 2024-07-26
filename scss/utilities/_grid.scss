@@ -1,17 +1,19 @@
 @import "../components/_mixin.scss";
 .fest{
+    display: flex;
+    justify-content: center;
     ul{
         display: grid;
         grid-template-columns: repeat(3,380px);
         row-gap: 5px;
         column-gap: 5px;
-        margin:13px 6em;
+        margin: 10px;
         li{
             list-style: none;
             .elemento{
                 width: 350px;
                 height: 300px;
-                } 
+            } 
         }
     }
  //--------PARTE MOBILE--------------
