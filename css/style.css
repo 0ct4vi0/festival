@@ -150,7 +150,7 @@ main section .intro img {
   padding: 1%;
 }
 .fest ul li {
-  margin: 10px 2%;
+  margin: 10px 4%;
   list-style: none;
 }
 .fest ul li .elemento {
@@ -304,7 +304,6 @@ main section .intro img {
 }
 .parte-2 .Lista-de-Participantes .list__item {
   width: 16rem;
-  margin: 0px 6px;
 }
 .parte-2 .Lista-de-Participantes .list__item h3 {
   margin: 10px;
@@ -332,10 +331,8 @@ main section .intro img {
   }
 }
 
-.parte-3 h3 {
+.parte-3 .titulo-de-entrada h3 {
   font-size: 30px;
-  margin: 10px 33.5rem;
-  width: 177px;
 }
 .parte-3 .img_cont {
   display: flex;
