@@ -5,9 +5,10 @@
         grid-template-columns: repeat(3,380px);
         row-gap: 5px;
         column-gap: 5px;
-        margin: 10px 5.5rem;
+        justify-content: center;
         padding: 1%;
         li{
+            margin: 10px 2%;
             list-style: none;
             .elemento{
                 width: 350px;
