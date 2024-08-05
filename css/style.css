@@ -166,6 +166,8 @@ main section .intro img {
     list-style: none;
   }
   .fest ul li {
+    width: 100%;
+    margin: 0px 0px;
     animation: slide 16s infinite alternate ease-in-out;
   }
   .fest ul li img {
@@ -180,22 +182,22 @@ main section .intro img {
       transform: translateX(0);
     }
     30% {
-      transform: translateX(-100%);
+      transform: translateX(-102%);
     }
     55% {
-      transform: translateX(-100%);
+      transform: translateX(-102%);
     }
     60% {
-      transform: translateX(-200%);
+      transform: translateX(-203%);
     }
     85% {
-      transform: translateX(-200%);
+      transform: translateX(-203%);
     }
     90% {
-      transform: translateX(-300%);
+      transform: translateX(-305%);
     }
     100% {
-      transform: translateX(-300%);
+      transform: translateX(-305%);
     }
   }
 }
@@ -318,6 +320,7 @@ main section .intro img {
     margin: 5px;
   }
   .parte-2 .titulo-de-entrada h2 {
+    margin: 10px 0px;
     font-size: 30px;
   }
   .parte-2 .Lista-de-Participantes {
@@ -327,7 +330,7 @@ main section .intro img {
   }
   .parte-2 .Lista-de-Participantes .list__item {
     width: 100%;
-    margin: 0px;
+    margin: 25px 0px;
   }
 }
 
