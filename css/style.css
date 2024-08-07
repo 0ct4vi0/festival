@@ -167,7 +167,7 @@ main section .intro img {
   }
   .fest ul li {
     width: 100%;
-    margin: 0px 0px;
+    margin: 0px;
     animation: slide 16s infinite alternate ease-in-out;
   }
   .fest ul li img {
